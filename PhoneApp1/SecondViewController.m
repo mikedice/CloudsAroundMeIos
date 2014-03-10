@@ -44,7 +44,7 @@
         searchQuery = [searchQuery stringByReplacingOccurrencesOfString:@" " withString:@"+"];
         NSString* url = [[NSString alloc] initWithFormat:@"https://maps.googleapis.com/maps/api/place/textsearch/json?query=%@&sensor=false&key=AIzaSyAkfpcO1Fox6IP3DGKJ3GMT-tv7TYWdE5o", searchQuery];
         
-        // Create teh request object and set its properties
+        // Create the request object and set its properties
         NSMutableURLRequest* request = [[NSMutableURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:url]];
         [request setValue: @"mikediceNet"  forHTTPHeaderField:@"referer"];
         request.HTTPMethod = @"GET";
